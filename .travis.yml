@@ -4,7 +4,7 @@ mono: none
 before_install:
   - sudo apt-get install nunit-console
 before_script:
-  - dotnet restore NameSorter.sln
+  - dotnet restore
 script:
   - xbuild /p:Configuration=Debug NameSorter.sln
 after-script:
