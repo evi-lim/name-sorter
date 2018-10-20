@@ -4,6 +4,4 @@ mono: none
 before_install:
   - sudo apt-get install nunit-console
 script:
-  - msbuild /p:Configuration=Debug NameSorter.sln
-after-script:
   - nunit-console ./NameSorterTest/bin/Debug/netcoreapp2.1/NameSorterTest.dll
