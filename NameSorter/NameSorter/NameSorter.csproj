@@ -12,6 +12,8 @@
     <Description>This program sorts name in ascending order. Sorts surname then given name respectively.</Description>
     <PackageReleaseNotes></PackageReleaseNotes>
     <AssemblyName>name-sorter</AssemblyName>
+    <RepositoryUrl>https://github.com/evi-lim/name-sorter.git</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/evi-lim/name-sorter</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
