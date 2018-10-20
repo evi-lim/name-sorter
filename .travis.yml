@@ -1,0 +1,14 @@
+language: csharp
+solution: NameSorter.sln
+matrix:
+  include:
+    - dotnet: 2.1.0
+      mono: none
+      env: DOTNETCORE=1
+    - mono: latest
+install:
+  - nuget restore NameSorter.sln
+  - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
+script:
+  - xbuild /p:Configuration=Debug NameSorter.sln
+  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./NameSorterTest/bin/Debug/netcoreapp2.1/NameSorterTest.dll
