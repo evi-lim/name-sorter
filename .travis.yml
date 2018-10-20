@@ -1,8 +1,9 @@
 language: csharp
 solution: NameSorter.sln
 mono: none
-install:
-  - dotnet restore
+before_install:
+  - sudo apt-get install nunit-console
 script:
   - dotnet build
-  - dotnet test ./NameSorterTest/NameSorterTest.csproj
+after-script:
+  - nunit-console ./NameSorterTest/bin/Debug/netcoreapp2.1/NameSorterTest.dll
