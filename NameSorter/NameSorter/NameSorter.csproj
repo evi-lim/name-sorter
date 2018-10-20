@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
+    <Authors>Evi Juwita Salim</Authors>
+    <Copyright>2018</Copyright>
+    <AssemblyVersion>1.2018.10.19</AssemblyVersion>
+    <FileVersion>1.2018.10.19</FileVersion>
+    <NeutralLanguage>en</NeutralLanguage>
+    <Description>This program sorts name in ascending order. Sorts surname then given name respectively.</Description>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <AssemblyName>name-sorter</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="05 Documentation\" />
+  </ItemGroup>
+
+</Project>
